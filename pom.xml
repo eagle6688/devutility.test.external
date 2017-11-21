@@ -13,7 +13,7 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>com.devutility</groupId>
+			<groupId>com.github.eagle6688</groupId>
 			<artifactId>devutility.internal</artifactId>
 			<version>1.0</version>
 			<scope>provided</scope>
