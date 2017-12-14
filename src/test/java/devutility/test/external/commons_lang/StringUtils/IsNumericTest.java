@@ -2,10 +2,10 @@ package devutility.test.external.commons_lang.StringUtils;
 
 import org.apache.commons.lang3.StringUtils;
 
-import devutility.internal.test.BaseService;
-import devutility.internal.test.ServiceExecutor;
+import devutility.internal.test.BaseTest;
+import devutility.internal.test.TestExecutor;
 
-public class IsNumericTest extends BaseService {
+public class IsNumericTest extends BaseTest {
 	String value;
 
 	public IsNumericTest(String value) {
@@ -22,7 +22,7 @@ public class IsNumericTest extends BaseService {
 	}
 
 	public static void main(String[] args) {
-		ServiceExecutor.run(new IsNumericTest("asd"));
-		ServiceExecutor.run(new IsNumericTest("123"));
+		TestExecutor.run(new IsNumericTest("asd"));
+		TestExecutor.run(new IsNumericTest("123"));
 	}
 }

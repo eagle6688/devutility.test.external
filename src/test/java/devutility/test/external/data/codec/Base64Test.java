@@ -2,10 +2,10 @@ package devutility.test.external.data.codec;
 
 import org.apache.commons.codec.binary.Base64;
 
-import devutility.internal.test.BaseService;
-import devutility.internal.test.ServiceExecutor;
+import devutility.internal.test.BaseTest;
+import devutility.internal.test.TestExecutor;
 
-public class Base64Test extends BaseService {
+public class Base64Test extends BaseTest {
 	@Override
 	public void run() {
 		String value = "Hellp World!Hello World!";
@@ -16,6 +16,6 @@ public class Base64Test extends BaseService {
 	}
 
 	public static void main(String[] args) {
-		ServiceExecutor.run(Base64Test.class);
+		TestExecutor.run(Base64Test.class);
 	}
 }

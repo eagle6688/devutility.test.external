@@ -2,10 +2,10 @@ package devutility.test.external.commons_lang.StringUtils;
 
 import org.apache.commons.lang3.StringUtils;
 
-import devutility.internal.test.BaseService;
-import devutility.internal.test.ServiceExecutor;
+import devutility.internal.test.BaseTest;
+import devutility.internal.test.TestExecutor;
 
-public class JoinArrayTest extends BaseService {
+public class JoinArrayTest extends BaseTest {
 	@Override
 	public void run() {
 		String[] array = { "1", "2" };
@@ -14,6 +14,6 @@ public class JoinArrayTest extends BaseService {
 	}
 
 	public static void main(String[] args) {
-		ServiceExecutor.run(JoinArrayTest.class);
+		TestExecutor.run(JoinArrayTest.class);
 	}
 }

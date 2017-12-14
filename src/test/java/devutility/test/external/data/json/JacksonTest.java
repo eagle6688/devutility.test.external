@@ -8,11 +8,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import devutility.internal.test.BaseService;
-import devutility.internal.test.ServiceExecutor;
+import devutility.internal.test.BaseTest;
+import devutility.internal.test.TestExecutor;
 import devutility.internal.test.models.Person;
 
-public class JacksonTest extends BaseService {
+public class JacksonTest extends BaseTest {
 	@Override
 	public void run() {
 		String json = null;
@@ -51,6 +51,6 @@ public class JacksonTest extends BaseService {
 	}
 
 	public static void main(String[] args) {
-		ServiceExecutor.run(JacksonTest.class);
+		TestExecutor.run(JacksonTest.class);
 	}
 }
