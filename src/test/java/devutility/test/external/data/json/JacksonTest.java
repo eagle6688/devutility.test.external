@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import devutility.internal.test.BaseTest;
 import devutility.internal.test.TestExecutor;
-import devutility.internal.test.models.Person;
+import devutility.test.external.models.Person;
 
 public class JacksonTest extends BaseTest {
 	@Override
