@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>com.github.eagle6688</groupId>
 			<artifactId>devutility.external</artifactId>
-			<version>1.0.3</version>
+			<version>1.0.2</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
