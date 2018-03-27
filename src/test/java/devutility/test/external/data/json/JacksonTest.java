@@ -3,6 +3,7 @@ package devutility.test.external.data.json;
 import java.io.IOException;
 import java.util.Date;
 
+import com.devutility.test.model.Person;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -10,7 +11,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import devutility.internal.test.BaseTest;
 import devutility.internal.test.TestExecutor;
-import devutility.test.external.models.Person;
 
 public class JacksonTest extends BaseTest {
 	@Override
