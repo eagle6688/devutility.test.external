@@ -4,8 +4,9 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
+import com.devutility.test.json.User;
+
 import devutility.external.data.json.JsonHelper;
-import devutility.external.test.model.User;
 import devutility.internal.test.TestExecutor;
 import devutility.test.external.cache.redis.BaseRedisCache;
 
