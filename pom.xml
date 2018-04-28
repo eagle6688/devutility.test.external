@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.devutility</groupId>
 	<artifactId>devutility.test.external</artifactId>
@@ -9,46 +8,60 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>9</maven.compiler.source>
-		<maven.compiler.target>9</maven.compiler.target>
-		<spring-data-mongodb-version>2.0.5.RELEASE</spring-data-mongodb-version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<spring-data-mongodb-version>2.0.6.RELEASE</spring-data-mongodb-version>
 	</properties>
 	<dependencies>
+		<!-- spring-data-mongodb -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>${spring-data-mongodb-version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- spring-data-mongodb end -->
+
+		<!-- commons-codec -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.11</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- commons-codec end -->
+
+		<!-- json -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+			<version>2.9.2</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- json end -->
+
+		<!-- commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.6</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- commons end -->
+
+		<!-- devutility -->
 		<dependency>
 			<groupId>com.github.eagle6688</groupId>
-			<artifactId>devutility.external</artifactId>
-			<version>1.0.8</version>
-			<scope>provided</scope>
+			<artifactId>devutility.internal</artifactId>
+			<version>1.1.2</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.devutility</groupId>
 			<artifactId>devutility.test.model</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-			<scope>provided</scope>
+			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.11</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.datatype</groupId>
-			<artifactId>jackson-datatype-jsr310</artifactId>
-			<version>2.9.2</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.6</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-mongodb</artifactId>
-			<version>${spring-data-mongodb-version}</version>
-			<scope>provided</scope>
-		</dependency>
+		<!-- devutility end -->
 	</dependencies>
 </project>
